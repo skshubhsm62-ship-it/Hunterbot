@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard — Shop Bot Builder</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark-wrap">
+        <svg width="24" height="24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="ng" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3a72a8"/><stop offset="100%" stop-color="#2f5f8f"/></linearGradient></defs>
+          <g fill="none" stroke="url(#ng)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="20" y="24" width="60" height="42" rx="14"/>
+            <circle cx="38" cy="43" r="4.5" fill="url(#ng)" stroke="none"/>
+            <circle cx="62" cy="43" r="4.5" fill="url(#ng)" stroke="none"/>
+            <path d="M38 55c4 4 20 4 24 0"/>
+            <path d="M50 24V13"/>
+            <circle cx="50" cy="9" r="4.5" fill="url(#ng)" stroke="none"/>
+            <path d="M12 78h9l6 18h46l6-18h9"/>
+          </g>
+        </svg>
+      </span>
+      <span class="logo"><span class="g">Shop</span><span class="b">Bot</span> Builder</span>
+    </a>
+    <div class="navlinks" id="navlinks"></div>
+  </div>
+</nav>
+
+<div class="dash-wrap">
+  <div class="dash-head">
+    <h1>Hi, <span id="userName">…</span> 👋</h1>
+    <p>Logged in as <span id="userEmail"></span></p>
+  </div>
+
+  <div class="card">
+    <h2>➕ Create a new Telegram bot</h2>
+    <div id="botMsg"></div>
+    <form id="botForm">
+      <div class="form-row">
+        <div class="field">
+          <label>Shop name</label>
+          <input type="text" id="shopName" placeholder="Rohan Digital Store" required>
+        </div>
+        <div class="field">
+          <label>BotFather token</label>
+          <input type="text" id="botToken" placeholder="123456:ABC-DEF..." required>
+        </div>
+        <button type="submit" class="btn btn-primary" id="botBtn">Create Bot</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>🤖 Your bots</h2>
+    <div id="botList"><div class="empty">Loading...</div></div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Shop Bot Builder</span>
+    <span>
+      <a href="about.html">About</a> ·
+      <a href="privacy.html">Privacy</a> ·
+      <a href="terms.html">Terms</a>
+    </span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/js/config.js"></script>
+<script src="js/js/auth.js"></script>
+<script src="js/js/dashboard.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+      </html>
