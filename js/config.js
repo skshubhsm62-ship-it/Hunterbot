@@ -1,0 +1,3 @@
+// js/config.js
+const SUPABASE_URL = 'https://jgdqkyzyfopncyywiqxe.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpnZHFreXp5Zm9wbmN5eXdpcXhlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4OTk4OTU3OSwiZXhwIjoyMTA1NTY1NTc5fQ.3-xfSQNePlpACNY-jLHcNEoWyrkvhclkS0OKfLWWv-8';
